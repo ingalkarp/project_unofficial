@@ -1,0 +1,20 @@
+package com.example.springboot.service;
+
+import java.util.List;
+
+import com.example.springboot.dto.PersonDTO;
+import com.example.springboot.model.Person;
+
+public interface IPersonService {
+	
+	List<PersonDTO> getAllPersons();
+	PersonDTO addPersonDetails(Person person);
+	PersonDTO searchByEmailId(String emailId);
+	Boolean deletePersonDetails(String emailId);
+	PersonDTO getPersonDetails(int personId);
+	PersonDTO updatePersonDetails(int personId,Person person);
+	String validatePerson(String emailId, String password);
+	
+	
+	
+}
